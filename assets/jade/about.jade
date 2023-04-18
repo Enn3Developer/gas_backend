@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		//-include templates/loader.jade
+		include templates/navigation.jade
+		section.section.section-nopadding.section-header(style="background-image: url(assets/images/head-6.jpg)").aligner
+			.section-overlay
+			.col-xs-12.text-center
+				h1 ABOUT
+				span ABOUT OUR SPECIAL MUSIC PLACE		
+		section.section.section-semi-white
+			.container-fluid
+				.col-md-6.col-md-offset-3
+					.section-head.with-icon
+						i.ion-ios-musical-notes
+						h3 Y.U.N.G STUDIO
+						p Our studio and our music facilities already served thousands of people.
+				.col-md-8.col-md-offset-2
+					.row.vertical-middle-desktop
+						.col-md-6.small-screen-margin-bottom
+							.row
+								img(src="assets/images/about-2.jpg", alt="About Image")
+						.col-md-6.padding-left-big
+							.row
+								.text-block
+									h4 HIGH QUALITY STUDIO
+									p Deep all saw morning cattle be beast signs. Third lights lesser, over said beginning. So one Rule she'd abundantly beast thing Morning above good above first fish sea given in seed appear sixth, face behold fish were a female which light Without multiply called moving night likeness living were days.
+									a(href="gallery.html").btn.btn-link GALLERY
+					.row.vertical-middle-desktop
+						.col-md-6.padding-right-big
+							.row
+								.text-block
+									h4 FRIENDLY &AMP; PROFESSIONAL PEOPLE
+									p Saw. That let. Made so two our day so said winged him Forth, without place rule may gathered. Won't spirit may all may air void also brought in fish face to doesn't Gathering all so midst all grass thing female fly day he. That signs you're day doesn't green given which for called multiply beast make green there. Fly tree one All fly shall they're rule second, which, shall firmament.
+									a(href="gallery.html").btn.btn-link ARTISTS
+						.col-md-6.small-screen-margin-top
+							.row
+								img(src="assets/images/about-1.jpg", alt="About Image")
+		section.section.section-black
+			.container-fluid
+				.row
+					.section-head.with-icon
+						i.ion-ios-chatbubble
+						h3 TESTIMONIALS
+						p Thoughts our customers shared about us, and our work.
+					.col-md-6.col-md-offset-3
+						#sync1-testimonial
+							.item.testimonials-item.text-center
+								blockquote Isn't. Place green unto made yielding behold, above grass female he, you'll second. Sea every winged Greater be can't blessed earth Morning their land days moved moved fill, itself yielding beast lights, itself great after seed waters creepeth first. Our land. Brought us deep abundantly air him made from have together midst rule waters she'd him a two the let thing replenish female forth land set without face hath.
+							.item.testimonials-item.text-center
+								blockquote Are we unto made yielding behold, above grass female he, you'll second. Sea every winged Greater be can't blessed earth Morning their land days moved moved fill, itself yielding beast lights, itself great after seed waters creepeth first. Our land. Brought us deep abundantly air him made from have together midst rule waters she'd him a two the let thing replenish female forth land set without.
+							.item.testimonials-item.text-center
+								blockquote Sea every winged Greater be can't blessed earth Morning their land days moved moved fill, itself yielding beast lights, itself great after seed waters creepeth first. Our land. Brought us deep abundantly air him made from have together midst rule waters she'd him a two the let thing replenish female.
+						#sync2-testimonial.text-center.margin-top
+							a(href="#!")
+								img(src="assets/images/avatar-1.jpg", alt="Author").img-circle
+							a(href="#!")
+								img(src="assets/images/avatar-2.jpg", alt="Author").img-circle
+							a(href="#!")
+								img(src="assets/images/avatar-3.jpg", alt="Author").img-circle
+		section.section-short.section.section-semi-white
+			.container-fluid
+				.col-md-6.col-md-offset-3
+					.section-head.with-icon
+						i.ion-heart
+						h3 ARTISTS
+						p Subscribe to our newsletter to receive news, updates and the latest projects we are working on.
+			.container-fluid
+				.row
+					.col-md-3
+						.artist
+							a(href="about-me.html")
+								h3 JESSICA TAYLOR
+								span SINGER
+								img(src="http://placehold.it/900x1200", alt="Artist")
+					.col-md-3
+						.artist
+							a(href="about-me.html")
+								h3 JACK RUSSEL
+								span ARTIST
+								img(src="http://placehold.it/900x1200", alt="Artist")
+					.col-md-3
+						.artist
+							a(href="about-me.html")
+								h3 PAUL GRYPP
+								span SINGER
+								img(src="http://placehold.it/900x1200", alt="Artist")
+					.col-md-3
+						.artist
+							a(href="about-me.html")
+								h3 PETER METRO
+								span PRODUCER
+								img(src="http://placehold.it/900x1200", alt="Artist")
+					.col-md-12.text-center.margin-top
+						a.btn.btn-link(href="contact.html") CAREERS
+		include templates/footer.jade
+		include templates/scripts.jade
+		script.
+			var sync1 = $("#sync1-testimonial");
+			var sync2 = $("#sync2-testimonial");
+
+			sync1.owlCarousel({
+				singleItem : true,
+				slideSpeed : 1000,
+				navigation: false,
+				pagination:false,
+				afterAction : syncPosition,
+				responsiveRefreshRate : 200,
+			});
+
+			sync2.owlCarousel({
+				items : 3,
+				itemsDesktop      : [1199,10],
+				itemsDesktopSmall     : [979,10],
+				itemsTablet       : [768,8],
+				itemsMobile       : [479,4],
+				pagination:false,
+				responsiveRefreshRate : 100,
+				afterInit : function(el){
+				  el.find(".owl-item").eq(0).addClass("synced");
+				}
+			});
+
+			function syncPosition(el){
+				var current = this.currentItem;
+				$("#sync2-testimonial")
+				  .find(".owl-item")
+				  .removeClass("synced")
+				  .eq(current)
+				  .addClass("synced")
+				if($("#sync2-testimonial").data("owlCarousel") !== undefined){
+				  center(current)
+				}
+			}
+
+			$("#sync2-testimonial").on("click", ".owl-item", function(e){
+			e.preventDefault();
+			var number = $(this).data("owlItem");
+			sync1.trigger("owl.goTo",number);
+			});
+
+			function center(number){
+			var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+			var num = number;
+			var found = false;
+			for(var i in sync2visible){
+			  if(num === sync2visible[i]){
+				var found = true;
+			  }
+			}
+
+			if(found===false){
+			  if(num>sync2visible[sync2visible.length-1]){
+				sync2.trigger("owl.goTo", num - sync2visible.length+2)
+			  }else{
+				if(num - 1 === -1){
+				  num = 0;
+				}
+				sync2.trigger("owl.goTo", num);
+			  }
+			} else if(num === sync2visible[sync2visible.length-1]){
+			  sync2.trigger("owl.goTo", sync2visible[1])
+			} else if(num === sync2visible[0]){
+			  sync2.trigger("owl.goTo", num-1)
+			}
+
+			}

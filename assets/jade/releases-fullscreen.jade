@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body.releases-fullscreen
+		//-include templates/loader.jade
+		include templates/navigation.jade
+		section.section.section-nopadding.section-header(style="background-image: url(assets/images/head-8.jpg)").aligner
+			.section-overlay
+			.col-xs-12.text-center
+				h1 RELEASES
+				span THE LATEST TRACK RELEASES.	
+		.main-wrapper
+			.release-slide.aligner.slide-one.text-center(data-background='#131313', data-color='#fff')
+				.col-md-12
+					.row
+						.col-md-12
+							.row
+								a(href="single-album.html")
+									img(src="assets/images/cd-1-fullscreen.png", alt="CD Cover", width="250")
+						.col-md-12.margin-top
+							.row
+								.release-fullscreen-info
+									h2 SECRETS
+									span Y.U.N.G MUSIC
+									a(href="#!").btn.btn-link LISTEN TO THIS ALBUM
+			.release-slide.aligner.text-center.slide-two(data-background='#ee3214', data-color='blue')
+				.col-md-12
+					.row
+						.col-md-12
+							a(href="single-album.html")
+								img(src="assets/images/cd-2.png", alt="CD Cover", width="350")
+						.col-md-12.margin-top
+							.row
+								.release-fullscreen-info
+									h2 SECRETS
+									span Y.U.N.G MUSIC
+									a(href="#!").btn.btn-link LISTEN TO THIS ALBUM								
+			.release-slide.aligner.text-center.slide-three(data-background='#e74c3c')
+				.col-md-12
+					.row
+						a(href="single-album.html")
+							img(src="assets/images/cd-3.png", alt="CD Cover", width="350")
+			.release-slide.aligner.text-center.slide-four(data-background='#e67e22')
+				.col-md-12
+					.row
+						a(href="single-album.html")
+							img(src="assets/images/cd-4.png", alt="CD Cover", width="350")
+			.release-slide.aligner.text-center.slide-five(data-background='#9b59b6')
+				.col-md-12
+					.row
+						a(href="single-album.html")
+							img(src="assets/images/cd-5.png", alt="CD Cover", width="350")
+			.release-slide.aligner.text-center.slide-five(data-background='#fff')
+				.col-md-12
+					.row
+						a(href="single-album.html")
+							img(src="assets/images/cd-6.png", alt="CD Cover", width="350")
+		include templates/footer.jade
+		include templates/scripts.jade
+		script(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_1.js")
+		script.
+			$( window ).ready(function() {
+				var wHeight = $(window).height();
+					$('.release-slide')
+					.height(wHeight)
+					.scrollie({
+					scrollOffset : -50,
+					scrollingInView : function(elem) {
+						var bgColor = elem.data('background');
+						var txtColor = elem.data('color');
+						$('body').css('background-color', bgColor);
+						$('.release-slide').css('color', txtColor);
+					}
+				});
+			});

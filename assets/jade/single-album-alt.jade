@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		//-include templates/loader.jade
+		include templates/navigation.jade
+		section.section.section-nopadding.section-header(style="background-image: url(assets/images/head-8.jpg)").aligner
+			.section-overlay
+			.col-xs-12.text-center
+				h1 RELEASES
+				span THE LATEST TRACK RELEASES.	
+		section.section.section-white
+			.container-fluid
+				.col-md-8.col-md-offset-2
+					.row
+						.col-md-12
+							.section-head.with-icon
+								i.ion-ios-star
+								h3 SINGLE ALBUM
+								p A more creative layout to display your latest album.
+						.col-md-12.margin-top
+							.row.releases-wrap.alt
+								.col-md-12.text-center
+									img(src="assets/images/cd-4.png", alt="CD Cover", width="350")
+									.text-block.single-album.margin-top
+										h4 ALBUM TITLE
+										span
+											| DATE:
+											|  2016
+										span
+											| GENRE:
+											|  R'N'B / HIP HOP
+										span
+											| LABEL:
+											|  Y.U.N.G MUSIC
+										a(href="#!").social-icon
+											i.ion-social-apple
+										a(href="#!").social-icon
+											i.ion-android-playstore
+								.col-md-12.margin-top-big
+									.tracklist
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 01
+												h4 INTRO
+													small 1:54
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 02
+												h4 POWER
+													small 4:32
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 03
+												h4 SOMETHING ABOUT YOU
+													small 3:27
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 04
+												h4 SPECIAL TREAT
+													small 5:11
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 05
+												h4 GOING BACK (FEAT. MAJID JOSH)
+													small 3:54
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 06
+												h4 MAKE ME 
+													small 4:23
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 07
+												h4 HEY, YOU! (PROD. BY METRO BOOMIN)
+													small 1:29
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 08
+												h4 FIND A PLANE
+													small 8:65
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 09
+												h4 DRESS UP (FEAT. KEITH WEST)
+													small 4:54
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 10
+												h4 GOODBYE TO YOU
+													small 4:46
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+										.track.row
+											.col-md-8.col-sm-6.aligner.text-left
+												span 11
+												h4 OUTRO
+													small 2:01
+											.col-md-4.col-sm-6.text-right
+												include templates/single-playback-widget.jade
+		include templates/footer.jade
+		include templates/scripts.jade
+		include templates/script-slider.jade
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.slideanims.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.layeranimation.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.navigation.min.js")

@@ -1,0 +1,22 @@
+  <head>
+    <meta charset="utf-8"/>
+    <title>GAS - Home</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/images/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Google Fonts--><link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+    <!-- MAIN STYLESHEETS-->
+    <link rel="stylesheet" href="/assets/css/bootstrap.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="/assets/css/mediaelementplayer.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all"/>
+  </head>

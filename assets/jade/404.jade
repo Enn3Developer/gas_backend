@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		//-include templates/loader.jade
+		include templates/navigation.jade
+		section.section.section-nopadding.section-header(style="background-image: url(assets/images/head-6.jpg)").aligner
+			.section-overlay
+			.col-xs-12.text-center
+				h1 404
+				span WE FOUND NOTHING.	
+		section.section.section-white
+			.container-fluid
+				.col-md-8.col-md-offset-2
+					.row
+						.col-md-12
+							.row.section-head.text-center
+								p But don't worry. We've got your back. Meanwhile, you can check some of our latest releases.
+						.col-md-12.margin-top-big
+							.row.releases-wrap
+								.col-md-4
+									a(href="single-album.html")
+										img(src="assets/images/cd-1.png", alt="CD Cover", width="350")
+								.col-md-4.small-screen-margin-top
+									a(href="single-album.html")
+										img(src="assets/images/cd-2.png", alt="CD Cover", width="350")
+								.col-md-4.small-screen-margin-top
+									a(href="single-album.html")
+										img(src="assets/images/cd-3.png", alt="CD Cover", width="350")
+								.col-md-12.text-center.margin-top
+									a(href="releases.html").btn.btn-success MORE RELEASES				
+		include templates/footer.jade
+		include templates/scripts.jade
+		include templates/script-slider.jade
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.slideanims.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.layeranimation.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.navigation.min.js")

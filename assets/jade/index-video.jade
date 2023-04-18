@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		//-include templates/loader.jade
+		//-include templates/playback-widget
+		include templates/navigation.jade
+		.rev_slider_wrapper.header-introduction.text-center
+			#rev_slider_2.rev_slider(data-version="5.0.7")
+				ul
+					//- SLIDE 1
+					li(data-transition="slideoverup")
+						img(src="assets/images/splash-image-11.jpg", alt="Slider Image", width="1920", height="1000")
+						div(class="rs-background-video-layer" data-forcerewind="on" data-volume="mute"  data-ytid="99c3LCf4YqE" data-videoattributes="version=3&enablejsapi=1&html5=1& hd=1&wmode=opaque&showinfo=0& ref=0;" data-videorate="1.5"  data-videowidth="100%"  data-videoheight="100%"  data-videocontrols="none" data-videostartat="00:10"  data-videoendat="01:03" data-videoloop="loop" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-nextslideatend="true" )
+						//- LAYER 1
+						.tp-caption.caption-classic(data-x="center" data-y="center", data-whitespace="normal", data-transform_idle="o:1;", data-transform_in="y:50;opacity:0s:400;s:400;e:Power2.easeInOut;", data-transform_out="y:+350;opacity:0s:400;s:400;e:Power2.easeInOut;", data-start="500")
+							span YUNG
+							h2 QUALITY STUDIO
+							a(href="about.html").btn.btn-link GET TO KNOW US
+		section.section.section-white.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+			.container-fluid
+				.col-md-8.col-md-offset-2
+					.row
+						.col-md-12
+							.row.section-head
+								.col-md-6.text-left
+										h3 TOUR
+								.col-md-6.text-right
+										p Get the latest info on the upcomign tour.
+						.col-md-12.margin-top-big.padded-top
+							.row
+								.col-md-4
+									.tour-wrap
+										img(src="assets/images/tour-5.jpg", alt="Tour location", width="60").img-circle
+										h3 19
+										h4 MARCH 2016
+										hr
+										p Santa Marina Hotel
+										span TORONTO, CANADA
+										a.btn.btn-success(href="#!") TICKETS
+								.col-md-4.xs-screen-margin-top
+									.tour-wrap
+										img(src="assets/images/tour-2.jpg", alt="Tour location", width="60").img-circle
+										h3 22
+										h4 MARCH 2016
+										hr
+										p Bay theater avenue
+										span NEW YORK, USA
+										a.btn.btn-success(href="#!") TICKETS
+								.col-md-4.small-screen-margin-top
+									.tour-wrap
+										img(src="assets/images/tour-4.jpg", alt="Tour location", width="60").img-circle
+										h3 23
+										h4 MARCH 2016
+										hr
+										p Musical Area
+										span SYDNEY, AUSTRALIA
+										a.btn.btn-success(href="#!") TICKETS
+						.col-md-12.margin-top.text-center
+							a.btn.btn-link(href="tours.html") MORE DATES
+		section.section-tiny.section.section-semi-white.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+			.container-fluid
+				.col-md-6.col-md-offset-3
+					.section-head.with-icon
+						i.ion-heart
+						h3 ARTISTS
+						p Subscribe to our newsletter to receive news, updates and the latest projects we are working on.
+			.container-fluid
+				.row
+					.col-md-3.col-sm-6.small-screen-margin-top
+						.artist
+							a(href="about-me.html")
+								h3 JESSICA TAYLOR
+								span SINGER
+								img(src="assets/images/artist-1.jpg", alt="Artist")
+					.col-md-3.col-sm-6.small-screen-margin-top
+						.artist
+							a(href="about-me.html")
+								h3 JACK RUSSEL
+								span ARTIST
+								img(src="assets/images/artist-2.jpg", alt="Artist")
+					.col-md-3.col-sm-6.small-screen-margin-top.small-screen-margin-bottom
+						.artist
+							a(href="about-me.html")
+								h3 PAUL GRYPP
+								span SINGER
+								img(src="assets/images/artist-3.jpg", alt="Artist")
+					.col-md-3.col-sm-6.small-screen-margin-top.small-screen-margin-bottom
+						.artist
+							a(href="about-me.html")
+								h3 PETER METRO
+								span PRODUCER
+								img(src="assets/images/artist-4.jpg", alt="Artist")
+					.col-md-12.text-center.margin-top
+						a.btn.btn-link.small-screen-margin-top(href="contact.html") CAREERS
+		section.section.section-white.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+			.container-fluid
+				.col-md-8.col-md-offset-2
+					.row
+						.col-md-12
+							.row.section-head
+								.col-md-6.text-left
+										h3 RELEASES
+								.col-md-6.text-right
+										p Our newest releases from our label's artists.
+						.col-md-12.margin-top-big
+							.row
+								.col-md-4.col-sm-4.small-screen-margin-top-big
+									a(href="single-album.html")
+										img(src="assets/images/cd-2.png", alt="CD Cover", width="350").small-screen-center-block
+								.col-md-4.col-sm-4.small-screen-margin-top-big
+									a(href="single-album.html")
+										img(src="assets/images/cd-3.png", alt="CD Cover", width="350").small-screen-center-block
+								.col-md-4.col-sm-4.small-screen-margin-top-big
+									a(href="single-album.html")
+										img(src="assets/images/cd-6.png", alt="CD Cover", width="350").small-screen-center-block
+						.col-md-12.margin-top-big.text-center
+							a(href="releases.html").btn.btn-link ALL RELEASES
+		section.section.section-white.os-animation(data-os-animation="fadeIn" data-os-animation-delay="0s")
+			.container-fluid
+				.col-md-8.col-md-offset-2
+					.row
+						.col-md-12
+							.section-head.with-icon
+								i.ion-ios-star
+								h3 SHOP
+								p A more creative layout to display your latest products.
+						.col-md-12.margin-top-big
+							.row
+								.col-md-4.col-sm-6.small-screen-margin-top
+									.product
+										a(href="shop-single.html")
+											img(src="assets/images/product-1.jpg", alt="Product")
+										.product-details.row
+											.col-md-6.product-detail-title
+												h4 
+													a(href="shop-single.html") BLACK HAT
+												span 
+													a(href="shop-single.html") &euro; 89.99
+											.col-md-6.text-right.product-detail-tools
+												a(href="shop-single.html")
+													i.ion-ios-heart
+												a(href="shop-single.html")
+													i.ion-ios-cart
+								.col-md-4.col-sm-6.small-screen-margin-top
+									.product
+										a(href="shop-single.html")
+											img(src="assets/images/product-2.jpg", alt="Product")
+										.product-details.row
+											.col-md-6.product-detail-title
+												h4 
+													a(href="shop-single.html") YUNG TOP
+												span 
+													a(href="shop-single.html") &euro; 199.99
+											.col-md-6.text-right.product-detail-tools
+												a(href="shop-single.html")
+													i.ion-ios-heart
+												a(href="shop-single.html")
+													i.ion-ios-cart
+								.col-md-4.col-sm-6.small-screen-margin-top
+									.product
+										a(href="shop-single.html")
+											img(src="assets/images/product-3.jpg", alt="Product")
+										.product-details.row
+											.col-md-6.product-detail-title
+												h4 
+													a(href="shop-single.html") SKINNY JEANS
+												span 
+													a(href="shop-single.html") &euro; 99.99
+											.col-md-6.text-right.product-detail-tools
+												a(href="shop-single.html")
+													i.ion-ios-heart
+												a(href="shop-single.html")
+													i.ion-ios-cart
+								.col-md-4.col-sm-6.margin-top
+									.product
+										a(href="shop-single.html")
+											img(src="assets/images/product-4.jpg", alt="Product")
+										.product-details.row
+											.col-md-6.product-detail-title
+												h4 
+													a(href="shop-single.html") BLACK CHAIN
+												span 
+													a(href="shop-single.html") &euro; 299.99
+											.col-md-6.text-right.product-detail-tools
+												a(href="shop-single.html")
+													i.ion-ios-heart
+												a(href="shop-single.html")
+													i.ion-ios-cart
+								.col-md-4.col-sm-6.margin-top
+									.product
+										a(href="shop-single.html")
+											img(src="assets/images/product-5.jpg", alt="Product")
+										.product-details.row
+											.col-md-6.product-detail-title
+												h4 
+													a(href="shop-single.html") PERFUME
+												span 
+													a(href="shop-single.html") &euro; 59.99
+											.col-md-6.text-right.product-detail-tools
+												a(href="shop-single.html")
+													i.ion-ios-heart
+												a(href="shop-single.html")
+													i.ion-ios-cart
+								.col-md-4.col-sm-6.margin-top
+									.product
+										a(href="shop-single.html")
+											img(src="assets/images/product-6.jpg", alt="Product")
+										.product-details.row
+											.col-md-6.product-detail-title
+												h4 
+													a(href="shop-single.html") SUN GLASSES
+												span 
+													a(href="shop-single.html") &euro; 89.99
+											.col-md-6.text-right.product-detail-tools
+												a(href="shop-single.html")
+													i.ion-ios-heart
+												a(href="shop-single.html")
+													i.ion-ios-cart
+								.col-md-12.text-center.margin-top
+									a.btn.btn-success.small-screen-margin-top(href="#!") MORE PRODUCTS
+		include templates/footer.jade
+		include templates/scripts.jade
+		include templates/script-slider.jade
+		script(type="text/javascript" src="assets/js/slider-initialization.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.slideanims.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.layeranimation.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.navigation.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.video.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.parallax.min.js")

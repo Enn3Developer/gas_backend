@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		//-include templates/loader.jade
+		include templates/navigation.jade
+		section.section.section-nopadding.section-header(style="background-image: url(assets/images/head-6.jpg)").aligner
+			.section-overlay
+			.col-xs-12.text-center
+				h1 RELEASES
+				span THE LATEST TRACK RELEASES.	
+		section.section.section-white
+			.container-fluid
+				.col-md-8.col-md-offset-2
+					.row
+						.col-md-12
+							.row.section-head
+								.col-md-6.text-left
+										h3 YUNG MUSIC
+								.col-md-6.text-right
+										p Select one of our latest records .
+						.col-md-12.margin-top-big
+							.row.releases-wrap
+								.col-md-4
+									a(href="single-album.html")
+										img(src="assets/images/cd-1.png", alt="CD Cover", width="350")
+								.col-md-4.small-screen-margin-top
+									a(href="single-album.html")
+										img(src="assets/images/cd-2.png", alt="CD Cover", width="350")
+								.col-md-4.small-screen-margin-top
+									a(href="single-album.html")
+										img(src="assets/images/cd-3.png", alt="CD Cover", width="350")
+								.col-md-4.margin-top-big
+									a(href="single-album.html")
+										img(src="assets/images/cd-4.png", alt="CD Cover", width="350")
+								.col-md-4.margin-top-big
+									a(href="single-album.html")
+										img(src="assets/images/cd-5.png", alt="CD Cover", width="350")
+								.col-md-4.margin-top-big
+									a(href="single-album.html")
+										img(src="assets/images/cd-6.png", alt="CD Cover", width="350")
+								.col-md-4.margin-top-big
+									a(href="single-album.html")
+										img(src="assets/images/cd-7.png", alt="CD Cover", width="350")
+								.col-md-4.margin-top-big
+									a(href="single-album.html")
+										img(src="assets/images/cd-8.png", alt="CD Cover", width="350")
+								.col-md-4.margin-top-big
+									a(href="single-album.html")
+										img(src="assets/images/cd-9.png", alt="CD Cover", width="350")					
+		section.section-tiny.section.section-semi-white
+			.container-fluid
+				.col-md-6.col-md-offset-3
+					.section-head.with-icon
+						i.ion-heart
+						h3 ARTISTS
+						p Subscribe to our newsletter to receive news, updates and the latest projects we are working on.
+			.container-fluid
+				.row
+					.col-md-3
+						.artist
+							a(href="about-me.html")
+								h3 JESSICA TAYLOR
+								span SINGER
+								img(src="assets/images/artist-1.jpg", alt="Artist")
+					.col-md-3
+						.artist
+							a(href="about-me.html")
+								h3 JACK RUSSEL
+								span ARTIST
+								img(src="assets/images/artist-2.jpg", alt="Artist")
+					.col-md-3
+						.artist
+							a(href="about-me.html")
+								h3 PAUL GRYPP
+								span SINGER
+								img(src="assets/images/artist-3.jpg", alt="Artist")
+					.col-md-3
+						.artist
+							a(href="about-me.html")
+								h3 PETER METRO
+								span PRODUCER
+								img(src="assets/images/artist-4.jpg", alt="Artist")
+					.col-md-12.text-center.margin-top
+						a.btn.btn-link(href="contact.html") CAREERS
+		include templates/footer.jade
+		include templates/scripts.jade
+		include templates/script-slider.jade
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.slideanims.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.layeranimation.min.js")
+		script(type="text/javascript", src="assets/js/revslider-extensions/revolution.extension.navigation.min.js")

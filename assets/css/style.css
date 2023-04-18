@@ -1,0 +1,49 @@
+h2.gas-title {
+    font-weight: 800 !important;
+    font-size: 128px;
+    color: #FFF6DB !important ;
+    padding: 12px;
+    text-shadow: 0 0 32px black;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+.products-btn {
+    background: #FFF6DB;
+    color: black;
+    padding: 12px 24px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 8px;
+    font-size: 16px;
+
+    transition: all 220ms;
+}
+
+.products-btn:hover {
+    background: black;
+    color: #FFF6DB;
+}
+
+
+a.login-btn {
+    background: #FFF6DB;
+    color: black;
+    padding: 12px 24px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 8px;
+    font-size: 16px;
+
+    transition: all 220ms;
+}
+a.login-btn:hover {
+    background: black;
+    color: #FFF6DB;
+}
+
+input.form-control {
+    border-radius: 8px !important;
+    margin-bottom: 16px;
+}

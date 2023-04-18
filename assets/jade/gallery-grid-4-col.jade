@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		//-include templates/loader.jade
+		include templates/navigation.jade
+		section.section.section-nopadding.section-header(style="background-image: url(assets/images/head-11.jpg)").aligner
+			.section-overlay
+			.col-xs-12.text-center
+				h1 GALLERY
+				span PRESENTED IN MASONRY
+		section.section.section-white
+			.container-fluid
+				.col-md-6.col-md-offset-3
+					.section-head.with-icon
+						i.ion-ios-eye
+						h3 PHOTOWALL
+						p Our shots from our life.
+				.col-md-8.col-md-offset-2
+					.zoom-gallery.row
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-1.jpg", data-source="assets/images/gallery-1.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-1.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 STUDIO
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-2.jpg", data-source="assets/images/gallery-2.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-2.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 CONCERT
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-3.jpg", data-source="assets/images/gallery-3.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-3.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 JACK
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-4.jpg", data-source="assets/images/gallery-4.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-4.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 GUITAR
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-5.jpg", data-source="assets/images/gallery-5.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-5.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 MIXING
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-7.jpg", data-source="assets/images/gallery-7.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-7.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 GUITAR
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-8.jpg", data-source="assets/images/gallery-8.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-8.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 RECORDING
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-9.jpg", data-source="assets/images/gallery-9.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-9.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 TOUR
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-10.jpg", data-source="assets/images/gallery-10.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-10.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 BASS
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-11.jpg", data-source="assets/images/gallery-11.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-11.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 RECORDS
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-3.jpg", data-source="assets/images/gallery-3.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-3.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 YUNG
+						.col-md-3.margin-top.grid-item
+							a(href="assets/images/gallery-7.jpg", data-source="assets/images/gallery-7.jpg",  title="Gallery Image")
+								img(src="assets/images/gallery-7.jpg" alt="Gallery image")
+								.item-overlay.text-center
+									h2 LABEL
+		include templates/footer.jade
+		include templates/scripts.jade

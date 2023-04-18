@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		include templates/head.jade
+	body
+		//-include templates/loader.jade
+		include templates/navigation.jade
+		section.section.section-nopadding.section-header(style="background-image: url(assets/images/head-8.jpg)").aligner
+			.section-overlay
+			.col-xs-12.text-center
+				h1 CART
+				span YOUR SHOPPING CART
+		section.section.section-white
+			.container-fluid
+				.col-md-8.col-md-offset-2
+					.row
+						.col-xs-12
+							.table-responsive
+								table.table.table-bordered.table-cart
+									thead
+										tr
+											th
+											th
+											th Product
+											th Quanity
+											th Size
+											th Price
+									tbody
+										tr
+											td.width-55.cart-no-border.cart-remove
+												a(href="#!")
+													i.ion-ios-close-outline
+											td.width-180.cart-no-border
+												img(src="http://placehold.it/150x150", alt="Product", width="150")
+											td.width-600.cart-no-border
+												h4 Black T-shirt
+												p Thing gathered whose. Image one for have hath fifth meat signs rule a our.
+											td.width-200.padding-top
+												h5 2
+											td.width-200.padding-top
+												h5 SIZE: &nbsp;
+												span Large
+											td.width-200.padding-top.cart-price
+												&euro; 49.99
+						.col-md-12.text-center
+							h6.opacity-05
+								i If you have a coupon, you'll request to provide it on checkout.
+							a(href="#!").btn.btn-primary.margin-top CHECKOUT
+		include templates/footer.jade
+		include templates/scripts.jade
