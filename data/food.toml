@@ -1,0 +1,17 @@
+[[foods]]
+image = "sus.jpg"
+name = "sus"
+price = 0.0
+desc = "sus desc"
+
+[[foods]]
+image = "sis.jpg"
+name = "sis"
+price = 420.0
+desc = "sis desc"
+
+[[foods]]
+image = "ses.jpg"
+name = "ses"
+price = 69.0
+desc = "ses desc"

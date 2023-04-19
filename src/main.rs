@@ -1,7 +1,7 @@
 use actix_web::http::header::ContentType;
 use actix_web::web::Redirect;
 use actix_web::{get, middleware, web, App, HttpResponse, HttpServer, Responder};
-use gas_backend::common;
+use gas_backend::{common, Food, Foods};
 use std::fs;
 
 #[get("/")]
@@ -19,7 +19,7 @@ async fn page(page: web::Path<String>) -> impl Responder {
             .content_type(ContentType::html())
             .body(common(content))
     } else {
-        Redirect::to("/404")
+        HttpResponse::NotFound().body("404 - Content not found")
     }
 }
 
@@ -36,7 +36,7 @@ async fn assets_data(path: web::Path<String>) -> impl Responder {
 
         response.body(asset)
     } else {
-        HttpResponse::NotFound()
+        HttpResponse::NotFound().await.unwrap()
     }
 }
 
