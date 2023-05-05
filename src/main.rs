@@ -1,7 +1,7 @@
 use actix_web::http::header::ContentType;
 use actix_web::web::Redirect;
 use actix_web::{get, middleware, web, App, HttpResponse, HttpServer, Responder};
-use gas_backend::{common, Food, Foods};
+use gas_backend::common;
 use std::fs;
 
 #[get("/")]
