@@ -52,7 +52,8 @@ impl Foods {
     }
 }
 
-pub fn common(page: String) -> String {
+pub fn common(page: String, title: &str) -> String {
+    let page = page.replace("$$TITLE$$", unicode_case_mapping::to_titlecase(title));
     let page = page.replace("$$FOOTER$$", include_str!("../html/footer"));
     let page = page.replace("$$HEAD$$", include_str!("../html/head"));
     if page.contains("$$FOODS$$") {
