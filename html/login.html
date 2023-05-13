@@ -10,21 +10,34 @@
             <p>Login nell'area riservata del GAS di Vasto</p>
           </div>
           <div class="text-center">
+            <div id="wrong" style="visibility: hidden">
+              <p style="color: red">Email o password sbagliati</p>
+            </div>
           <!-- <form class="newsletter-form text-center"> -->
             <label>
-              <input placeholder="YOUR EMAIL ADDRESS..." required="required" class="form-control"/>
+              <input placeholder="YOUR EMAIL ADDRESS..." required="required" class="form-control" id="email"/>
             </label>
             <br>
             <label>
-              <input placeholder="YOUR PASSWORD..." required="required" class="form-control"/>
+              <input placeholder="YOUR PASSWORD..." required="required" class="form-control" id="password"/>
             </label>
             <br>
-            <a href="/html/shop" class="login-btn">Login</a>
+            <button class="login-btn" onclick="login()">Login</button>
+<!--            <a href="/html/shop" class="login-btn">Login</a>-->
           <!-- </form> -->
         </div>
         </div>
       </div>
     </section>
+
+    <script>
+      function login() {
+        console.log("function");
+        if (document.getElementById("email").value === "enn3player@gmail.com" && document.getElementById("password").value === "sus") {
+          location.href = "shop";
+        }
+      }
+    </script>
 
     $$FOOTER$$
   </body>
