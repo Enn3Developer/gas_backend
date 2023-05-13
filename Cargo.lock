@@ -454,6 +454,7 @@ dependencies = [
  "serde",
  "serde_derive",
  "toml",
+ "unicode-case-mapping",
 ]
 
 [[package]]
@@ -1082,6 +1083,12 @@ name = "unicode-bidi"
 version = "0.3.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "92888ba5573ff080736b3648696b70cafad7d250551175acbaa4e0385b3e1460"
+
+[[package]]
+name = "unicode-case-mapping"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b92e07ac57786e12073609c8a91417884306b753d974108ca48c8434ed9b99cb"
 
 [[package]]
 name = "unicode-ident"
