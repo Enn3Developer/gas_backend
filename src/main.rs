@@ -17,7 +17,7 @@ async fn page(page: web::Path<String>) -> impl Responder {
     if let Ok(content) = fs::read_to_string(format!("html/{page}.html")) {
         HttpResponse::Ok()
             .content_type(ContentType::html())
-            .body(common(content))
+            .body(common(content, &page))
     } else {
         HttpResponse::NotFound().body("404 - Content not found")
     }
